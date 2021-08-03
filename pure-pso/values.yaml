@@ -105,17 +105,19 @@ images:
     deployer:
       name: purestorage/dbdeployer
       tag: v1.2.0-rc1
-      pullPolicy: Always
+      pullPolicy: IfNotPresent
     cockroachOperator:
       name: purestorage/cockroach-operator
       tag: v1.2.0-rc1
-      pullPolicy: Always
+      pullPolicy: IfNotPresent
     psctl:
       name: purestorage/psctl
       tag: v1.1.0-rc1
+      pullPolicy: IfNotPresent
     cockroachdb:
       name: cockroachdb/cockroach
       tag: v20.2.6
+      pullPolicy: IfNotPresent
 
 # specify the service account name for this app
 clusterrolebinding:
